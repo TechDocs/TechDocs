@@ -1,0 +1,11 @@
+{
+  "title": "Bootstrap · The world's most popular mobile-first and responsive front-end framework.",
+  "url": "http://www.wivern.com/bootstrap",
+  "language": "ja",
+  "contribute": "https://twitter.com/smokyjp",
+  "version": "3.2.*",
+  "origin": "bootstrap",
+  "pages": {
+    "*/": "*.html"
+  }
+}
