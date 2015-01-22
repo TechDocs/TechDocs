@@ -1,0 +1,14 @@
+{
+  "name": "TechDocs",
+  "version": "0.0.1",
+  "author": "Tsutomu Kawamura <cognitom@gmail.com>",
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "run-sequence": "^1.0.2"
+  },
+  "scripts": {
+    "build": "gulp"
+  }
+}
