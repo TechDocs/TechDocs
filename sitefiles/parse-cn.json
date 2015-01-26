@@ -5,6 +5,6 @@
   "language": "cn",
   "origin": "parse",
   "rules": [
-    "* > cn/*"
+    "* > *"
   ]
 }

@@ -5,6 +5,6 @@
   "language": "ja",
   "origin": "parse",
   "rules": [
-    "* > jp/*"
+    "* > *"
   ]
 }

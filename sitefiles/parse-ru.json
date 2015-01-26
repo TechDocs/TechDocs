@@ -5,6 +5,6 @@
   "language": "ru",
   "origin": "parse",
   "rules": [
-    "* > ru/*"
+    "* > *"
   ]
 }
