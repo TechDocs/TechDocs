@@ -3,5 +3,8 @@
   "title": "欢迎使用 Parse",
   "url": "https://parse.com/docs/cn",
   "language": "cn",
-  "origin": "parse"
+  "origin": "parse",
+  "rules": [
+    "* > cn/*"
+  ]
 }
