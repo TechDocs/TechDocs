@@ -4,6 +4,14 @@
 
 The technical document curation service for you.
 
+## Chrome Extension
+
+Easy switching between languages.
+
+![screenshot](images/screenshot.png)
+
+Coming soon!
+
 ## Sitefiles
 
 ### Original Documents
