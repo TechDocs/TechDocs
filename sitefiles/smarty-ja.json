@@ -5,7 +5,7 @@
   "language": "ja",
   "version": "3.*",
   "origin": "smarty",
-  "pages": {
-    "*": "*"
-  }
+  "rules": [
+    "* > *"
+  ]
 }
