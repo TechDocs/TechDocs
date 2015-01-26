@@ -1,0 +1,11 @@
+{
+  "id": "smarty-cn",
+  "title": "Smarty3 手册",
+  "url": "http://www.smarty.net/docs/zh_CN",
+  "language": "cn",
+  "version": "3.*",
+  "origin": "smarty",
+  "pages": {
+    "*": "*"
+  }
+}
