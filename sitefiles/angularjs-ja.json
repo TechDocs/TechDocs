@@ -12,12 +12,12 @@
     "ng/type/$rootScope.Scope > ng_types/scope",
     "ng/type/ngModel.NgModelController > ng_types/ng_model_controller",
     "ng/type/form.FormController > ng_types/form_controller",
-    "auto/service/* > auto/* | snakecase",
-    "ngAnimate/*/* > nganimate_*/* | snakecase",
-    "ngCookies/*/* > ngcookies_*/* | snakecase",
-    "ngMock/*/* > ngmock_*/* | snakecase",
-    "ngMockE2E/*/* > ngmocke2e_*/* | snakecase",
-    "ngTouch/*/* > ngtouch_*/* | snakecase",
-    "ng/* > ng_* | snakecase"
+    "auto/service/* > auto/* | camel2snake",
+    "ngAnimate/*/* > nganimate_*/* | camel2snake",
+    "ngCookies/*/* > ngcookies_*/* | camel2snake",
+    "ngMock/*/* > ngmock_*/* | camel2snake",
+    "ngMockE2E/*/* > ngmocke2e_*/* | camel2snake",
+    "ngTouch/*/* > ngtouch_*/* | camel2snake",
+    "ng/* > ng_* | camel2snake"
   ]
 }

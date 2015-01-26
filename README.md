@@ -112,13 +112,13 @@ The (part of) sitefile would be like below.
 
 ```json
 "rules": [
-  "ng/* > ng_* | snakecase"
+  "ng/* > ng_* | camel2snake"
 ]
 ```
 
 The pipe `|` can connect single of multiple filters.
 
-- `snakecase`: convert `camelCase` to `snake_case`
+- `camel2snake`: convert `camelCase` to `snake_case`
 - `camelcase`: convert `snake_case` to `camelCase`
 - `replace`: convert letters to others
   
@@ -130,8 +130,8 @@ Basically we should keep reversibility. If it couldn't, we have **reverse** matc
 
 ```json
 "rules": [
-  "ng/* > ng_* | snakecase",
-  "ng/* < ng_* | camelcase"
+  "ng/* > ng_* | camel2snake",
+  "ng/* < ng_* | snake2camel"
 ]
 ```
 
