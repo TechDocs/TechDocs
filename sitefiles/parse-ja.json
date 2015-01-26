@@ -3,5 +3,8 @@
   "title": "Parseへようこそ",
   "url": "https://parse.com/docs/jp",
   "language": "ja",
-  "origin": "parse"
+  "origin": "parse",
+  "rules": [
+    "* > jp/*"
+  ]
 }
