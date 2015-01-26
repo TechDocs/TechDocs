@@ -49,36 +49,36 @@ Translated documents have two more attribute in `sitefile`.
   "contribute": "https://twitter.com/smokyjp",
   "version": "3.2.*",
   "origin": "bootstrap",
-  "pages": {
-    "getting-started/": "getting-started.html",
-    "css/": "css.html",
-    "components/": "components.html"
-  }
+  "rules": [
+    "getting-started/ > getting-started.html",
+    "css/ > css.html",
+    "components/ > components.html"
+  ]
 }
 ```
 
 - `origin`: The ID of the original document.
-- `pages`: The list of pairs of URL. `"<original>": "<translated>"`
+- `rules`: The list of pairs of URL. `"[original] > [translated]"`
 
 
 ### Wildcard in URL
 
-We can use wildcards in `pages` section.
+We can use wildcards in `rules` section.
 
 ```json
-"pages": {
-  "getting-started/": "getting-started.html",
-  "css/": "css.html",
-  "components/": "components.html"
-}
+"rules": [
+  "getting-started/ > getting-started.html",
+  "css/ > css.html",
+  "components/ > components.html"
+]
 ```
 
 The part of `sitefile` above would be rewritten like below. 
 
 ```json
-"pages": {
-  "*/": "*.html"
-}
+"rules": [
+  "*/ > *.html"
+]
 ```
 
 #### How to Process Wildcard
@@ -111,9 +111,9 @@ Sometimes, URLs need more complicated matching. For example, the case below need
 The (part of) sitefile would be like below.
 
 ```json
-"pages": {
-  "ng/*": "ng_* | snakecase"
-}
+"rules": [
+  "ng/* > ng_* | snakecase"
+]
 ```
 
 The pipe `|` can connect single of multiple filters.
@@ -126,12 +126,12 @@ The pipe `|` can connect single of multiple filters.
 
 Wildcards and filters are useful, but it's possible to break the reversibility of URL conversion. Please note that we have to match `original` <--> `translated`.
 
-Basically we should keep reversibility. If it couldn't, we have another option `[R]`everse match. The next two are equivalent.
+Basically we should keep reversibility. If it couldn't, we have **reverse** match. The next two are equivalent.
 
 ```json
-"pages": {
-  "ng/*": "ng_* | snakecase",
-  "[R]ng_*": "ng/* | camelcase"
-}
+"rules": [
+  "ng/* > ng_* | snakecase",
+  "ng/* < ng_* | camelcase"
+]
 ```
 
