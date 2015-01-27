@@ -1,0 +1,10 @@
+{
+  "id": "css-mdn-ja",
+  "title": "CSS | MDN",
+  "url": "https://developer.mozilla.org/ja/docs/Web/CSS",
+  "language": "ja",
+  "origin": "css-mdn",
+  "rules": [
+    "* > *"
+  ]
+}
