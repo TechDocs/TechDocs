@@ -97,7 +97,7 @@ url2 = translated.replace(new RegExp('^(.+?).html$'), '$1/');
 // url2 == original
 ```
 
-As above, wildcards are bidirectionally used - original to translate and viseversa.
+As above, wildcards are bidirectionally used - original to translate and vice versa.
 
 ### Filter in URL
 
@@ -119,7 +119,9 @@ The (part of) sitefile would be like below.
 The pipe `|` can connect single of multiple filters.
 
 - `camel2snake`: convert `camelCase` to `snake_case`
-- `camelcase`: convert `snake_case` to `camelCase`
+- `snake2camel`: convert `snake_case` to `camelCase`
+- `dot2snake`: convert `dot.case` to `snake_case`
+- `snake2dot`: convert `snake_case` to `dot.case`
 - `replace`: convert letters to others
   
 ### Reversibility
