@@ -1,0 +1,10 @@
+{
+  "id": "php-ja",
+  "title": "PHP マニュアル",
+  "url": "http://php.net/manual/ja",
+  "language": "ja",
+  "origin": "php",
+  "rules": [
+    "* > *"
+  ]
+}
