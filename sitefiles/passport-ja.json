@@ -1,0 +1,10 @@
+{
+  "id": "passport-ja",
+  "title": "Passport",
+  "url": "http://knimon-software.github.io/www.passportjs.org/guide",
+  "language": "ja",
+  "origin": "passport",
+  "rules": [
+    "* > *"
+  ]
+}
