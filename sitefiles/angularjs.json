@@ -1,7 +1,7 @@
 {
   "id": "angularjs",
   "title": "AngularJS: API: API Reference",
-  "url": "https://docs.angularjs.org/api",
+  "url": "https://docs.angularjs.org/api/",
   "language": "en",
   "contribute": "https://github.com/angular/angular.js",
   "version": "1.4.*"

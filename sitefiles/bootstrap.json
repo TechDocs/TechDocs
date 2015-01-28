@@ -1,7 +1,7 @@
 {
   "id": "bootstrap",
   "title": "Bootstrap · The world's most popular mobile-first and responsive front-end framework.",
-  "url": "http://getbootstrap.com",
+  "url": "http://getbootstrap.com/",
   "language": "en",
   "contribute": "https://github.com/twbs/bootstrap",
   "version": "3.3.*"

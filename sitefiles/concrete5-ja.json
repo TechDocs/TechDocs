@@ -1,7 +1,7 @@
 {
   "id": "concrete5-ja",
   "title": "開発者向け :: concrete5 Japan 日本語公式サイト",
-  "url": "http://concrete5-japan.org/help/developer",
+  "url": "http://concrete5-japan.org/help/developer/",
   "language": "ja",
   "version": "5.6.*",
   "origin": "concrete5"
