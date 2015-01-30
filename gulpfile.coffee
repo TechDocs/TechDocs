@@ -5,6 +5,13 @@ path        = require 'path'
 
 gulp.task 'default', (cb) -> runSequence 'create-index', cb
 
+sorter = (col, desc = false) ->
+  sign = if desc then -1 else 1
+  (a, b) ->
+    return sign * 1    if a[col] > b[col]
+    return sign * (-1) if a[col] < b[col]
+    0
+
 gulp.task 'create-index', (cb) ->
   fs.readdir './sitefiles', (err, files) ->
     index = []
@@ -16,5 +23,5 @@ gulp.task 'create-index', (cb) ->
         url: sitefile.url
         language: sitefile.language
         origin: sitefile.origin or ''
-    data = JSON.stringify index
+    data = JSON.stringify index.sort sorter 'id'
     fs.writeFile 'index.json', data, -> cb()
