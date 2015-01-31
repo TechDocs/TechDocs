@@ -1,0 +1,7 @@
+{
+  "id": "railstutorial",
+  "title": "Ruby on Rails Tutorial",
+  "url": "https://www.railstutorial.org/book",
+  "language": "en",
+  "version": "*"
+}

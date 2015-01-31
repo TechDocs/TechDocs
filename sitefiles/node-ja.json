@@ -1,0 +1,11 @@
+{
+  "id": "node-ja",
+  "title": "Node.js マニュアル & ドキュメンテーション",
+  "url": "http://nodejs.jp/nodejs.org_ja/api/",
+  "language": "ja",
+  "version": "0.11.*",
+  "origin": "node",
+  "rules": [
+    "* > *"
+  ]
+}
