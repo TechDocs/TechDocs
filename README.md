@@ -1,6 +1,6 @@
 ![cover](images/cover.png)
 
-# [WIP] TechDocs
+# TechDocs
 
 The technical document curation service for you.
 
@@ -8,9 +8,18 @@ The technical document curation service for you.
 
 Easy switching between languages.
 
+- [Get Extension from Chrome Web Store](https://chrome.google.com/webstore/detail/techdocs/agdhoefaennmlpjlckdggihpbfacopdn) - v1.0
+
 ![screenshot](images/screenshot.png)
 
-Coming soon!
+## Supported Documents
+
+[Check the list of sitefile.](https://github.com/TechDocs/TechDocs/tree/gh-pages/sitefiles)
+
+We've just started the project. Pls let us know which document you need!
+
+- [Comment on the issue](https://github.com/TechDocs/TechDocs/issues/4)
+- [Send pull request to this repo](https://github.com/TechDocs/TechDocs/pulls)
 
 ## Sitefiles
 
