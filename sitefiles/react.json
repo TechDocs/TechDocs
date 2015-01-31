@@ -1,0 +1,8 @@
+{
+  "id": "react",
+  "title": "React",
+  "url": "http://facebook.github.io/react/docs",
+  "language": "en",
+  "contribute": "https://github.com/facebook/react/tree/master/docs/docs",
+  "version": "*"
+}
