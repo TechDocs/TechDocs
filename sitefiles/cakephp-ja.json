@@ -1,0 +1,12 @@
+{
+  "id": "cakephp-ja",
+  "title": "CakePHP Cookbook 3.x",
+  "url": "http://book.cakephp.org/3.0/ja",
+  "language": "ja",
+  "contribute": "https://github.com/cakephp/docs",
+  "version": "3.*",
+  "origin": "cakephp",
+  "rules": [
+    "* > *"
+  ]
+}

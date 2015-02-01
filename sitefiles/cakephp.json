@@ -1,0 +1,8 @@
+{
+  "id": "cakephp",
+  "title": "CakePHP Cookbook 3.x",
+  "url": "http://book.cakephp.org/3.0/en",
+  "language": "en",
+  "contribute": "https://github.com/cakephp/docs",
+  "version": "3.*"
+}

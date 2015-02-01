@@ -1,0 +1,10 @@
+{
+  "id": "laravel-ja",
+  "title": "Laravel ドキュメント",
+  "url": "http://readouble.com/laravel/4/2/0/ja",
+  "language": "ja",
+  "version": "4.2",
+  "rules": [
+    "* > *.html"
+  ]
+}
