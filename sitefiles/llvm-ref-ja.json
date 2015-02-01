@@ -3,5 +3,8 @@
   "title": "LLVM 言語マニュアル",
   "url": "http://www.h3.dion.ne.jp/~mu-ra/llvm/LangRefJ.html",
   "language": "ja",
-  "origin": "llvm-ref"
+  "origin": "llvm-ref",
+  "rules": [
+    "* > *"
+  ]
 }
