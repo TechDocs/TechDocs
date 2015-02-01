@@ -6,6 +6,6 @@
   "version": "4.2",
   "origin": "laravel",
   "rules": [
-    "/* > /*.html"
+    "* > *.html"
   ]
 }
