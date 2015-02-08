@@ -47,7 +47,7 @@ The `sitefile` of the original document - typically written in English - would b
 
 ### Translated Documents
 
-Translated documents have two more attribute in `sitefile`.
+Translated documents have two more attributes in `sitefile`.
 
 ```json
 {
