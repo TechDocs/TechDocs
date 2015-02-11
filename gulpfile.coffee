@@ -26,6 +26,7 @@ $ =
   sitefiles:  './sitefiles/*.json'
   components: './src/components/*.tag'
   logo:       './src/images/logo.sketch'
+  og:         './src/images/og.sketch'
   watch:      ['*.html', '*.js', '*.css']
 
 sorter = (col, desc = false) ->
@@ -38,6 +39,7 @@ sorter = (col, desc = false) ->
 gulp.task 'default', (cb) -> runSequence 'create-index', [
   'browserify'
   'logo'
+  'og'
   'css'
 ], cb
 
@@ -75,6 +77,14 @@ gulp.task 'logo', ->
     formats: 'svg'
   .pipe gulp.dest $.images
 
+gulp.task 'og', ->
+  gulp.src $.og
+  .pipe sketch
+    export: 'artboards'
+    formats: 'png'
+    scales: '1.0'
+  .pipe gulp.dest $.dist
+
 gulp.task 'css', ->
   gulp.src $.style
   .pipe cssimport()
@@ -91,4 +101,5 @@ gulp.task 'watch', ->
   gulp.watch [$.js, $.components], o, ['browserify']
   gulp.watch [$.css], o, ['css']
   gulp.watch [$.logo], o, ['logo']
+  gulp.watch [$.og], o, ['og']
   gulp.watch $.watch, o, reload
