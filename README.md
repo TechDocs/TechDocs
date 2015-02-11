@@ -8,7 +8,7 @@ The technical document curation service for you.
 
 Easy switching between languages.
 
-- [Get Extension from Chrome Web Store](https://chrome.google.com/webstore/detail/techdocs/agdhoefaennmlpjlckdggihpbfacopdn) - v1.0
+- [Get Extension from Chrome Web Store](https://chrome.google.com/webstore/detail/techdocs/agdhoefaennmlpjlckdggihpbfacopdn) - v1.0.1
 
 ![screenshot](images/screenshot.png)
 
