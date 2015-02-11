@@ -6,6 +6,8 @@ cssimport    = require 'gulp-cssimport'
 autoprefixer = require 'gulp-autoprefixer'
 minifyCss    = require 'gulp-minify-css'
 sourcemaps   = require 'gulp-sourcemaps'
+replace      = require 'gulp-replace'
+concat       = require 'gulp-concat'
 browserify   = require 'browserify'
 riotify      = require 'riotify'
 source       = require 'vinyl-source-stream'
@@ -15,6 +17,7 @@ fs           = require 'fs'
 path         = require 'path'
 browserSync  = require 'browser-sync'
 reload       = browserSync.reload
+stylefilter  = -> replace /(^[\s\S]*<style>|<\/style>[\s\S]*$)/gm, ''
 
 $ =
   dist:       './'
@@ -61,7 +64,7 @@ gulp.task 'browserify', ->
   browserify
     entries: [$.app]
     debug: true
-  .transform riotify
+  .transform riotify, skipStyle: true
   .bundle()
   .pipe source path.basename $.app
   .pipe buffer()
@@ -86,10 +89,12 @@ gulp.task 'og', ->
   .pipe gulp.dest $.dist
 
 gulp.task 'css', ->
-  gulp.src $.style
+  gulp.src [$.style, $.components]
+  .pipe stylefilter()
   .pipe cssimport()
   .pipe autoprefixer 'last 2 versions'
   .pipe minifyCss keepSpecialComments: 0
+  .pipe concat 'style.css'
   .pipe gulp.dest $.dist
 
 gulp.task 'watch', ->
@@ -99,7 +104,7 @@ gulp.task 'watch', ->
   o = debounceDelay: 3000
   gulp.watch [$.sitefiles], o, ['create-index']
   gulp.watch [$.js, $.components], o, ['browserify']
-  gulp.watch [$.css], o, ['css']
+  gulp.watch [$.css, $.components], o, ['css']
   gulp.watch [$.logo], o, ['logo']
   gulp.watch [$.og], o, ['og']
   gulp.watch $.watch, o, reload
