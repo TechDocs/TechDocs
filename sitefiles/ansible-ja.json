@@ -1,0 +1,8 @@
+{
+"id": "ansible",
+"title": "Ansible · Ansible is an IT automation tool.",
+"url": "http://www.kyoshida.jp/ansibledoc-ja/",
+"language": "ja",
+"contribute": "https://github.com/ansible/ansible",
+"version": "1.8.*"
+}
